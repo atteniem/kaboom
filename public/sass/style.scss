@@ -1,0 +1,40 @@
+@import "splash";
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+$background-color: #222233;
+$text-color: #52b3d9;
+$heading-color: #aaccff;
+
+body {
+  padding: 50px;
+  font-family: 'Press Start 2P', sans-serif;
+  background: $background-color;
+  color: $text-color;
+}
+.emphasis {
+  color: lighten(#52b3d9, 15%);
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: 'Press Start 2P', sans-serif;
+  color: $heading-color;
+}
+
+.particles {
+  z-index: 1;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+#abort-launch, #briefing, #splash-jumbotron {
+  z-index: 2;
+  position: relative;
+  * {
+    z-index: 2;
+  }
+}

@@ -1,0 +1,34 @@
+extends layout
+
+block code
+  script(src='vendor/particles.js/particles.js')
+  script(src='es5/the-end-particles.js')
+  script(src='es6/abort-launch-app.js')
+
+block content
+  #travel-particles.particles
+
+  #abort-launch.row
+    .two.columns &nbsp;
+    #screen.eight.columns
+
+  .row.ask-name(style="display: none; position: relative; z-index: 2")
+    .two.columns &nbsp;
+    .eight.columns
+      input#lastname(name="lastname", type="text", placeholder="Full name")
+      p.wrong-last-name(style="color: orange; display: none") Hmm.. are you sure?
+
+  .row.ask-want(style="display: none; position: relative; z-index: 2")
+    .two.columns &nbsp;
+    .eight.columns
+      input#want-ham(name="want", type="text", placeholder="First demand")
+      p.wrong-ham(style="color: orange; display: none") Hmm.. are you sure? Something about eating...?
+      p.want-ham-fulfilled(style="color: green; display: none") Oh okay.
+      input#want-play(name="want", type="text", placeholder="Second demand")
+      p.wrong-play(style="color: orange; display: none") Hmm.. are you sure? Something about play...?
+      p.want-play-fulfilled(style="color: green; display: none") Gotcha
+
+  .row.final-demand(style="display: none; position: relative; z-index: 2")
+    .two.columns &nbsp;
+    .eight.columns
+      a(href="sponsored-by-donald-trump") Follow me!

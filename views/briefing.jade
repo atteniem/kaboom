@@ -1,0 +1,34 @@
+extends layout
+
+block code
+  link(rel='stylesheet', href='sass/briefing.css')
+  script(src='vendor/particles.js/particles.js')
+  script(src='es5/briefing-particles.js')
+  script(src='es6/briefing-app.js')
+
+block content
+  #splash-particles.particles
+
+  div#briefing.row
+    .two.columns &nbsp;
+    .eight.columns.splash
+      h1
+      p.thank-you
+      p.problem
+
+      p.emphasis.first-emphasis
+
+      p.we-need
+
+      ul.emphasis(style="display:none")
+        li.emp-1.
+        li.emp-2.
+        li.emp-3.
+
+      p.reveal(style="display:none") The infected computer system can be accessed&nbsp;
+        a(href="/wopr") here
+
+      p.reveal(style="display:none") AFTER YOU HAVE RECOVERD THE PASSWORD PLEASE ENTER IT&nbsp;
+        a(href="/secret") HERE
+
+      p.emphasis.second-emphasis

@@ -1,0 +1,20 @@
+#splash-jumbotron {
+  min-height: 50%;
+  margin-top: 20%;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+
+  input {
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #00B7FF;
+    border-radius: 0;
+    text-align: center;
+    transition: border-width 0.2s ease-in-out;
+
+    &:focus {
+      border-bottom: 3px solid #00B7FF;
+    }
+  }
+}

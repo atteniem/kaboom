@@ -1,0 +1,24 @@
+extends layout
+
+block code
+  script(src='vendor/particles.js/particles.js')
+  script(src='es5/the-end-particles.js')
+  script(src='es6/the-end-app.js')
+
+block content
+  #travel-particles.particles
+
+  #the-end.row
+    .two.columns &nbsp;
+    .eight.columns
+      img#psstore(src="/images/psstore.png", style="width: 20%; display: none")
+      p.first-part
+      p.emphasis.emphasis-one
+
+      p.coordinates(style="white-space: pre-line; font-size: 3em; color: #fff")
+
+      p.second-part
+
+      p.emphasis.emphasis-two
+
+      p.third-part
